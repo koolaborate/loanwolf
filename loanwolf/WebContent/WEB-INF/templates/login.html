@@ -2,7 +2,8 @@
 <head> 
     <title>Getting Started: Serving Web Content</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" th:src="@{/resources/javascript/modules/login.js}"></script>
 </head>
 <body>
     <p th:text="'Hello, ' + ${message} + '!'" />

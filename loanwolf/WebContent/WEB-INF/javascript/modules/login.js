@@ -1,2 +1,0 @@
-// for login
-alert('works');
