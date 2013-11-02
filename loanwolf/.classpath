@@ -27,5 +27,8 @@
 	<classpathentry kind="var" path="MVN/org/thymeleaf/thymeleaf/2.0.19/thymeleaf-2.0.19.jar"/>
 	<classpathentry kind="var" path="MVN/org/thymeleaf/thymeleaf-spring3/2.0.19/thymeleaf-spring3-2.0.19.jar"/>
 	<classpathentry kind="var" path="MVN/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
+	<classpathentry kind="var" path="MVN/javassist/javassist/3.11.0.GA/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="var" path="MVN/javassist/javassist/3.12.0.SP1/javassist-3.12.0.SP1.jar"/>
+	<classpathentry kind="var" path="MVN/ognl/ognl/3.0.8/ognl-3.0.8.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
