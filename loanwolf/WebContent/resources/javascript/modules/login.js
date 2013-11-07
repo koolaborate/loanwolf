@@ -4,4 +4,6 @@ $(document).ready(function(){
 	
 	$uniformed = $(".styleThese").find("input, textarea, select, button, a.uniformTest").not(".skipThese");
 	$uniformed.uniform();
+	
+	$("#optionsTheme").val(optionValues.theme);
 }); 
