@@ -1,4 +1,4 @@
 // for login
 $(document).ready(function(){
-  alert('ok3');
+//  alert('ok3');
 }); 
