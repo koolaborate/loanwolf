@@ -8,13 +8,70 @@
     <script type="text/javascript" th:src="@{/resources/style/what.js}"></script>
 	
     <link rel="stylesheet" th:href="@{/resources/style/multiple-themes.css}" media="screen" />
+    <style type="text/css" media="screen">
+			body {
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #666;
+				padding: 40px;
+			}
+			h1 {
+				margin-top: 0;
+			}
+			label {
+				font-size: 10px;
+				font-weight: bold;
+				text-transform: uppercase;
+				display: block;
+				margin-bottom: 3px;
+				clear: both;
+			}
+			.error {
+				background-color: #FF8080;
+			}
+			.hide {
+				display: none;
+			}
+		</style>
 </head>
 <body>
-    <p th:text="'Hello, ' + ${message} + '!'" />
-    
-    <span>
-    	<h1>Uniform Demo</h1>
-    </span>
+	<form class="styleThese">
+	    <p th:text="'Hello, ' + ${message} + '!'" />
+	    
+	    <span>
+	    	<h1>Uniform Demo</h1>
+	    </span>
+	    
+	    <span>
+	    	test: <input type="search" size="40"/>
+	    </span>
+	    
+	    <table width="100%">
+	    	<tr>
+				<td width="50%">
+					<div>
+						<label>Message:</label>
+						<textarea cols="40" rows="5"></textarea>
+					</div>
+					<div>
+						<label>Unstyled:</label>
+						<input class="skipThese" type="text" size="40" value="This is unstyled on purpose" />
+					</div>
+					<div>
+						<label>Your Name:</label>
+						<input type="text" size="40" value="John Doe"/>
+					</div>
+					<div>
+						<label>Your Email:</label>
+						<input type="email" size="40" value="mr_hotshot0357@example.com" />
+					</div>
+					<div>
+						<label>Search:</label>
+						<input type="search" size="40"/>
+					</div>
+				</td>
+			</tr>
+	    </table>
+    </form>
 </body>
 </html>
 

@@ -1,4 +1,7 @@
 // for login
 $(document).ready(function(){
-//  alert('ok3');
+	var $min, $remove, $apply, $uniformed;
+	
+	$uniformed = $(".styleThese").find("input, textarea, select, button, a.uniformTest").not(".skipThese");
+	$uniformed.uniform();
 }); 
