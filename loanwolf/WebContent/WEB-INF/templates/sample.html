@@ -1,0 +1,163 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" th:src="@{/resources/javascript/modules/login.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/javascript/jquery.uniform.js}"></script>
+	
+    <link rel="stylesheet" th:href="@{/resources/style/multiple-themes.css}" media="screen" />
+    <link rel="stylesheet" th:href="@{/resources/style/themes/default/css/uniform.default.css}" media="screen" />
+    <link rel="stylesheet" th:href="@{/resources/style/modules/login/login.main.css}" media="screen" />
+</head>
+<body>
+	<form class="styleThese">
+	    <p th:text="'Hello, ' + ${message} + '!'" />
+	    
+    	<h1>Uniform Demo</h1>
+	    
+	    <span>
+	    	test: <input type="search" size="40"/>
+	    </span>
+	    
+	    <table>
+	    	<tr>
+				<td width="50%">
+					<div>
+						<label>Message:</label>
+						<textarea cols="40" rows="5"></textarea>
+					</div>
+					<div>
+						<label>Unstyled:</label>
+						<input class="skipThese" type="text" size="40" value="This is unstyled on purpose" />
+					</div>
+					<div>
+						<label>Your Name:</label>
+						<input type="text" size="40" value="John Doe"/>
+					</div>
+					<div>
+						<label>Your Email:</label>
+						<input type="email" size="40" value="mr_hotshot0357@example.com" />
+					</div>
+					<div>
+						<label>Search:</label>
+						<input type="search" size="40"/>
+					</div>
+				</td>
+			</tr>
+	    </table>
+    </form>
+    
+	<form class="styleThese">
+		<h1>Uniform Demo</h1>
+		Options:
+		<input type="checkbox" name="min" id="optionsMin" />
+		<select name="theme" id="optionsTheme">
+			<option value="default">Default</option>
+			<option value="agent">Agent</option>
+			<option value="aristo">Aristo</option>
+			<option value="jeans">Jeans</option>
+		</select>
+		<select name="jquery" id="optionsJquery">
+			<option value="1.3">jQuery 1.3.x</option>
+			<option value="1.4.2">jQuery 1.4.2</option>
+			<option value="1.4">jQuery 1.4.x</option>
+			<option value="1.5">jQuery 1.5.x</option>
+			<option value="1.6">jQuery 1.6.x</option>
+			<option value="1.7">jQuery 1.7.x</option>
+			<option value="1.8">jQuery 1.8.x</option>
+			<option value="1.9.0">jQuery 1.9.0</option>
+		</select>
+		
+		<span id="jqueryCurrentVersion"></span>
+		<button id="remove">Remove</button>
+		<button id="apply" style="display:none">Apply</button>
+		
+		<div>
+			<label>Range:</label>
+			<input type="range" size="40"/>
+		</div>
+		
+		<div>
+			<label>I found your site:</label>
+			<select id="demoFoundSite">
+				<option value="google">Through Google</option>
+				<option value="twitter">Through Twitter</option>
+				<option value="other">Other&hellip;</option>
+				<option value="hi">&lt;Hi&gt;</option>
+			</select>
+		</div>
+		
+		<div>
+			<label>How do you feel?</label>
+			<select id="demoFeeling" multiple="multiple" size="4">
+				<option value="elated">Elated</option>
+				<option value="happy">Happy</option>
+				<option value="content">Content</option>
+				<option value="ok">Ok</option>
+				<option value="unhappy">Unhappy</option>
+				<option value="frustrated">Frustrated</option>
+				<option value="cranky">Cranky</option>
+				<option value="mad">Mad</option>
+				<option value="unlisted">Anything else</option>
+			</select>
+		</div>
+		<div>
+			<label>
+				<input type="radio" name="radio" value="hi" /> Saying hi
+			</label>
+			<label>
+				<input type="radio" name="radio" value="feedback" /> Sending feedback
+			</label>
+			<label>
+				<input type="radio" name="radio" value="default" checked="CHECKED" /> Default Seleted Radio
+			</label>
+		</div>
+		<div>
+			<label>
+				<input type="checkbox" id="contactBack" /> Please contact me back
+			</label>
+			<label>
+				<input type="checkbox" checked="CHECKED" id="goodDay" /> Today is a good day
+			</label>
+		</div>
+		<div>
+			<label>Upload a file:</label>
+			<input type="file" />
+		</div>
+		
+		<div class="error">
+			<!-- Here are some fields with "display: none" on them.
+			When Uniform wraps them, the surrounding div should also get
+			the "display: none" style applied. -->
+			<input type="text" value="You should not see this." class="hide" />
+			<select id="demoHide" class="hide">
+				<option>If you can see this, it's an error</option>
+			</select>
+			<input type="checkbox" class="hide" />
+			<input type="radio" name="radio" class="hide" value="hidden" />
+			<input type="file" class="hide" />
+		</div>
+		<div>
+			<input type="submit" />
+			<input type="reset" />
+		</div>
+		
+		<p class="styleThese">
+			<a href="http://google.com/">Normal link</a>,
+			<a href="http://google.com" class="uniformTest">uniformed link (self)</a> and
+			<a href="http://google.com" class="uniformTest" target="newWindow">uniformed link (new window)</a>.
+		</p>
+		
+	</form>    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
