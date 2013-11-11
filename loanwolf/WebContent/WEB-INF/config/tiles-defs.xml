@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+    "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+    "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<!-- 
+		http://forum.thymeleaf.org/How-properly-write-and-use-definitions-in-thymeleaf-extras-tiles2-td4025602.html
+	 -->
+    <definition name="baseBodyOnly" template="include/layoutBodyOnly" templateType="thymeleaf">
+        <put-attribute name="body" value="include/blank :: bodyContent" type="thymeleaf"/>
+    </definition>
+
+    <definition name="baseWithoutTopMenu" template="include/layoutWithoutTop" templateType="thymeleaf">
+        <put-attribute name="body" value="include/blank :: bodyContent" type="thymeleaf"/>
+        <put-attribute name="footer" value="include/footer :: footerBlock" type="thymeleaf"/>
+    </definition>
+
+    <definition name="baseLayout" template="include/layout" templateType="thymeleaf">
+        <put-attribute name="topMenu" value="include/header :: topMenuBlock" type="thymeleaf"/>
+        <put-attribute name="body" value="include/blank :: bodyContent" type="thymeleaf"/>
+        <put-attribute name="footer" value="include/footer :: footerBlock" type="thymeleaf"/>
+    </definition>
+</tiles-definitions>

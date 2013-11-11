@@ -12,4 +12,11 @@ public class AuxiliaryController {
 		modelMap.addAttribute("message", "Samples Page");
 		return "sample";
 	}
+	
+	@RequestMapping({"/createlead"})
+	public String showTilesEx(ModelMap model) {
+		model.addAttribute("message", "Spring 3 MVC Hello World");
+		return "createleadform";
+	}
+	
 }
